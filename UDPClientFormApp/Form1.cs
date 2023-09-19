@@ -43,7 +43,6 @@ namespace UDPClientFormApp
         {
             MethodInvoker methodInvoker = new MethodInvoker(delegate
             {
-                //txtLog.Text += string.Format("Server Yanıtı : {0}.{1}", msg, Environment.NewLine);
                 txtLog.Text += $"Server Yanıtı : {msg}.{Environment.NewLine}";
                 txtMsg.Text += string.Empty;
             });
@@ -57,7 +56,6 @@ namespace UDPClientFormApp
 
             btnCreateClint.Enabled = txtClientPort.Enabled = txtHostName.Enabled = txtServerPort.Enabled = false;
             btnSend.Enabled = true;
-
         }
     }
 }
